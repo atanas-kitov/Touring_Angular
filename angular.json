@@ -32,10 +32,11 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/scss/bootstrap.scss",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "src/styles.scss"
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -105,6 +106,6 @@
     }
   },
   "cli": {
-    "analytics": "a9512f75-b3df-41d1-a8b3-763792cd81ef"
+    "analytics": "84007a8f-f66f-4d95-b27d-d8c803ba139a"
   }
 }

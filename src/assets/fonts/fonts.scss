@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'SofiaBoldItalic';
+	src: url('SofiaSans-BoldItalic.woff2') format('woff2'), url('SofiaSans-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SofiaBold';
+	src: url('SofiaSans-Bold.woff2') format('woff2'), url('SofiaSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SofiaMedium';
+	src: url('SofiaSans-Medium.woff2') format('woff2'), url('SofiaSans-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SofiaExtraBoldItalic';
+	src: url('SofiaSans-ExtraBoldItalic.woff2') format('woff2'), url('SofiaSans-ExtraBoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SofiaRegular';
+	src: url('SofiaSans-Regular.woff2') format('woff2'), url('SofiaSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SofiaMediumItalic';
+	src: url('SofiaSans-MediumItalic.woff2') format('woff2'), url('SofiaSans-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SofiaItalic';
+	src: url('SofiaSans-Italic.woff2') format('woff2'), url('SofiaSans-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}

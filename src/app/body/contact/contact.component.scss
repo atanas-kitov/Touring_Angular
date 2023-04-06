@@ -1,0 +1,124 @@
+@import "../../../constants.scss";
+
+div#contact-us {
+  padding: 0 0 50px 0;
+  box-sizing: border-box;
+  div.container {
+    div.row {
+      justify-content: center;
+      div[class^="col"] {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 411px;
+        div.contact-logo {
+          background-image: url("../../../assets/contact-logo.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 34%;
+          height: 100%;
+        }
+        div.contact-background {
+          background-image: url("../../../assets/template.jpg");
+          background-repeat: repeat;
+          background-position: center;
+          background-size: 100%;
+          width: 66%;
+          height: 100%;
+          position: relative;
+          div.text-container {
+            position: absolute;
+            width: 100%;
+            height: 86%;
+            right: 8%;
+            top: 7%;
+            background-color: $orange;
+            box-shadow: 0 3px 6px #00000029;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            padding: 5px 30px 5px 30px;
+            box-sizing: border-box;
+            h3 {
+              color: #fff;
+              font-size: 32px;
+              line-height: 39px;
+              text-align: right;
+              font-family: $SofiaBold;
+              text-transform: uppercase;
+            }
+            p {
+              color: #fff;
+              font-size: 18px;
+              line-height: 23px;
+              text-align: right;
+              font-family: $SofiaItalic;
+            }
+            button {
+              text-transform: uppercase;
+              box-shadow: 0 3px 6px #00000029;
+              background-color: #ffb190;
+              border: none;
+              color: #fff;
+              text-align: left;
+              font-family: $SofiaBold;
+              font-size: 21px;
+              line-height: 24px;
+              border-radius: 8px;
+              padding: 8px 33px 8px 14px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1510px) {
+  div#contact-us {
+    background-image: url("../../../assets/template.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 50%;
+    div.container {
+      div.row {
+        div[class^="col"] {
+          height: auto;
+          div.contact-logo {
+            display: none;
+          }
+          div.contact-background {
+            position: inherit;
+            width: 100%;
+            height: 100%;
+            background: none;
+            padding-top: 50px;
+            div.text-container {
+              position: inherit;
+              height: 100%;
+              align-items: flex-end;
+              box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              align-items: center;
+              padding: 40px 0;
+              gap: 27px;
+              h3 {
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+              }
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+@import "../../../constants.scss";
+
+div.hero-image {
+  position: relative;
+  min-height: 600px;
+  background-image: url("../../../assets/mainpage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: -69px;
+  margin: 0 auto;
+  div.woman {
+    height: 632px;
+    width: 632px;
+    position: absolute;
+    background: transparent url("../../../assets/woman.png") no-repeat;
+    background-position-x: -70px;
+    background-size: cover;
+    right: 10%;
+    z-index: 5;
+    div.line {
+      position: absolute;
+      width: 491.85px;
+      height: 114.4px;
+      top: 240px;
+      left: -35%;
+      background-image: url("../../../assets/1.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+  div.title-wrapper {
+    width: 58%;
+    background-color: #33282d;
+    top: 259px;
+    left: 0;
+    position: absolute;
+    border-radius: 0 0 20px 0;
+    opacity: 0.8;
+    h1 {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      height: 100%;
+      margin: 0;
+      padding: 22px 10px 22px 30%;
+      box-sizing: border-box;
+      font-family: $SofiaBold;
+      text-transform: uppercase;
+      font-size: 46px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  div.hero-image {
+    div.woman {
+      height: 632px;
+      width: 632px;
+      right: 0;
+      div.line {
+        position: absolute;
+        width: 491.85px;
+        height: 114.4px;
+        top: 240px;
+        left: -23%;
+        background-repeat: no-repeat;
+        background-size: 85%;
+      }
+    }
+    div.title-wrapper {
+      width: 58%;
+      background-color: #33282d;
+      top: 259px;
+      left: 0;
+      position: absolute;
+      border-radius: 0 0 20px 0;
+      opacity: 0.8;
+      h1 {
+        padding: 22px 10px 22px 15%;
+        font-size: 46px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  div.hero-image {
+    div.woman {
+      right: 0;
+      z-index: 5;
+      div.line {
+        display: none;
+      }
+    }
+    div.title-wrapper {
+      width: 55%;
+      background-color: #33282d;
+      top: 170px;
+      left: 0;
+      position: absolute;
+      border-radius: 0 0 20px 0;
+      opacity: 0.8;
+      h1 {
+        padding: 22px 10px 22px 5%;
+        font-size: 46px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  div.hero-image {
+    height: 490px;
+    background-position-y: -57px;
+    background-position-x: 63%;
+    background-size: auto 100%;
+    margin: 0 auto;
+    div.woman {
+      height: 420px;
+      width: 420px;
+      position: absolute;
+      background-size: 110%;
+      background-position: center;
+      left: auto;
+      right: 5%;
+      top: 200px;
+      z-index: 10;
+      div.line {
+        display: none;
+      }
+    }
+    div.title-wrapper {
+      width: 283px;
+      background-color: #33282d;
+      height: 154px;
+      top: 155px;
+      left: 0;
+      position: absolute;
+      border-radius: 0 0 20px 0;
+      opacity: 0.8;
+      h1 {
+        padding: 19px 19px 18px 51px;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  div.hero-image {
+    height: 490px;
+    background-position-y: -57px;
+    background-position-x: 63%;
+    background-size: auto 100%;
+    margin: 0 auto;
+    div.woman {
+      height: 366px;
+      width: 360px;
+      position: absolute;
+      background-size: 110%;
+      background-position: center;
+      background-position-x: 20px;
+      background-position-y: 45px;
+      left: auto;
+      right: 0;
+      top: 217px;
+      z-index: 10;
+      div.line {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 70px;
+        top: 135px;
+        left: 4px;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        transform: rotate(40deg);
+      }
+    }
+    div.title-wrapper {
+      width: 283px;
+      background-color: #33282d;
+      height: 154px;
+      top: 155px;
+      left: 0;
+      position: absolute;
+      border-radius: 0 0 20px 0;
+      opacity: 0.8;
+      h1 {
+        padding: 19px 19px 18px 51px;
+        font-size: 32px;
+      }
+    }
+  }
+}
