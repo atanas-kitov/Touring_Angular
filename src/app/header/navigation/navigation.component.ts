@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-  public onClick() : void {
-    console.log('clicked')
+  scrollToAbout() : void {
+    // document.getElementById('about-wrapper').scrollIntoView({ behavior: 'smooth' })
   }
 
 }

@@ -9,6 +9,8 @@ import { HeroImgComponent } from './body/hero-img/hero-img.component';
 import { AboutComponent } from './body/about/about.component';
 import { ContactComponent } from './body/contact/contact.component';
 import { FooterComponent } from './footer/footer/footer.component';
+import { ServiceComponent } from './body/service/service.component';
+import { ServiceCardComponent } from './body/service/service-card/service-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FooterComponent } from './footer/footer/footer.component';
     HeroImgComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ServiceComponent,
+    ServiceCardComponent
   ],
   imports: [
     BrowserModule,
