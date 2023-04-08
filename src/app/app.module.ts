@@ -10,7 +10,6 @@ import { AboutComponent } from './body/about/about.component';
 import { ContactComponent } from './body/contact/contact.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { ServiceComponent } from './body/service/service.component';
-import { ServiceCardComponent } from './body/service/service-card/service-card.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +20,9 @@ import { ServiceCardComponent } from './body/service/service-card/service-card.c
     ContactComponent,
     FooterComponent,
     ServiceComponent,
-    ServiceCardComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

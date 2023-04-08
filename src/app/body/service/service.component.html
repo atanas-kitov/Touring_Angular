@@ -4,26 +4,28 @@
     <div class="row">
       <div class="col">
         <h2>Предлагани Услуги</h2>
-        <div class="row" *ngFor="let card of services">
-          <!-- <app-service-card></app-service-card> -->
-          <!-- {services.map((card) => {
-                            return <ServiceCard card={card} key={card.id} processData={processData} />;
-                        })} -->
-          <div class="col-sm-12 col-md-6 col-xl-4">
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-6 col-xl-4"
+            *ngFor="let card of services"
+          >
             <div class="services-card">
               <div class="title">
-                <h3 class="activity">card.activity</h3>
-                <h3 class="location">.location</h3>
+                <h3 class="activity">{{ card.activity }}</h3>
+                <h3 class="location">{{ card.location }}</h3>
               </div>
-              <div class="services-image"></div>
+              <div
+                class="services-image"
+                [style.background]="card.background"
+              ></div>
               <div class="services-info">
                 <div>
                   <img src="../../../../assets/time.svg" alt="time" />
-                  <span>Времетраене: .timeч.</span>
+                  <span>Времетраене: {{ card.time }}ч.</span>
                 </div>
                 <div>
                   <img src="../../../../assets/wallet.svg" alt="price" />
-                  <span>Цена: .priceлв.</span>
+                  <span>Цена: {{ card.price }}лв.</span>
                 </div>
                 <!-- <Link to={`/${card.id}`} state={{ data: { card } }}>
                                         Виж повече
