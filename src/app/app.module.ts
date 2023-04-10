@@ -10,6 +10,8 @@ import { AboutComponent } from './body/about/about.component';
 import { ContactComponent } from './body/contact/contact.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { ServiceComponent } from './body/service/service.component';
+import { ServicesPageComponent } from './services-page/services-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { ServiceComponent } from './body/service/service.component';
     ContactComponent,
     FooterComponent,
     ServiceComponent,
+    ServicesPageComponent,
+    HomePageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

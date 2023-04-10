@@ -16,7 +16,7 @@
               </div>
               <div
                 class="services-image"
-                [style.background]="card.background"
+                [style.backgroundImage]="card.background"
               ></div>
               <div class="services-info">
                 <div>
@@ -27,9 +27,7 @@
                   <img src="../../../../assets/wallet.svg" alt="price" />
                   <span>Цена: {{ card.price }}лв.</span>
                 </div>
-                <!-- <Link to={`/${card.id}`} state={{ data: { card } }}>
-                                        Виж повече
-                                    </Link> -->
+                <button routerLink="{{ card.id }}">Виж повече</button>
               </div>
             </div>
           </div>

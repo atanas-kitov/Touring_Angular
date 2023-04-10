@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-  scrollToAbout() : void {
-    // document.getElementById('about-wrapper').scrollIntoView({ behavior: 'smooth' })
+
+  scrollToAbout(): void {
+    document.querySelector("#about-wrapper")?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  scrollToContacts(): void {
+    document.querySelector("#contact-us")?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
