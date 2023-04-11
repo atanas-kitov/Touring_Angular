@@ -4,8 +4,8 @@ import { ServicesPageComponent } from './services-page/services-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: ":serviceId", component: ServicesPageComponent },
   { path: "", component: HomePageComponent},
+  { path: ":serviceId", component: ServicesPageComponent },
 ];
 
 @NgModule({

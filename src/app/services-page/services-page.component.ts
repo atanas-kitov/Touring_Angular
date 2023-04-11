@@ -8,10 +8,10 @@ import { IServices } from '../app.interfaces';
 })
 export class ServicesPageComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.data)
+    // console.log(this.data)
   }
 
-  @Input() data :IServices | any;
+  
 
 
 }

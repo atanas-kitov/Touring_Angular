@@ -9,7 +9,6 @@ import { IServices } from 'src/app/app.interfaces';
 export class ServiceComponent implements OnChanges {
   
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.services)
   }
   @Input() services: IServices[] = [];
 }
