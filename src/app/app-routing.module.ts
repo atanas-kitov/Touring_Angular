@@ -4,12 +4,13 @@ import { ServicesPageComponent } from './services-page/services-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: "", component: HomePageComponent},
-  { path: ":serviceId", component: ServicesPageComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'service/:serviceId', component: ServicesPageComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

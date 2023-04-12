@@ -2,18 +2,17 @@ import { Injectable } from '@angular/core';
 import { IServices } from './app.interfaces';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FetchServicesService {
+  constructor() {}
 
-  constructor() { }
-
-  get() : IServices[] {
+  get(): IServices[] {
     return [
       {
         activity: 'Екскурзия до',
         location: 'Побити камъни',
-        background: 'url(../../../assets/slider2-1.jpg',
+        background: 'slider2-1.jpg',
         time: 3,
         price: 60,
         description:
@@ -23,7 +22,7 @@ export class FetchServicesService {
       {
         activity: 'Обиколка на',
         location: 'Градска художествена галерия',
-        background: 'url(../../../assets/slider2-2.jpg)',
+        background: 'slider2-2.jpg',
         time: 1,
         price: 30,
         description:
@@ -33,7 +32,7 @@ export class FetchServicesService {
       {
         activity: 'Обиколка на',
         location: 'Римски терми',
-        background: 'url(../../../assets/slider2-3.jpg)',
+        background: 'slider2-3.jpg',
         time: 2,
         price: 40,
         description:
@@ -43,7 +42,7 @@ export class FetchServicesService {
       {
         activity: 'Екскурзия до',
         location: 'Аладжа манастир',
-        background: 'url(../../../assets/slider2-4.jpg)',
+        background: 'slider2-4.jpg',
         time: 3,
         price: 60,
         description:
@@ -53,7 +52,7 @@ export class FetchServicesService {
       {
         activity: 'Обиколка на',
         location: 'Резиденция евксиноград',
-        background: 'url(../../../assets/slider2-5.jpg)',
+        background: 'slider2-5.jpg',
         time: 3,
         price: 90,
         description:
@@ -63,7 +62,7 @@ export class FetchServicesService {
       {
         activity: 'Обиколка на',
         location: 'Музей на куклата',
-        background: 'url(../../../assets/slider2-6.jpg)',
+        background: 'slider2-6.jpg',
         time: 2,
         price: 40,
         description:

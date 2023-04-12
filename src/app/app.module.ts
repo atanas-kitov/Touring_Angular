@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer/footer.component';
 import { ServiceComponent } from './body/service/service.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalComponent } from './body/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,9 @@ import { HomePageComponent } from './home-page/home-page.component';
     ServiceComponent,
     ServicesPageComponent,
     HomePageComponent,
+    ModalComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

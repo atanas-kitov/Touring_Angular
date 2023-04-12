@@ -16,7 +16,12 @@
               </div>
               <div
                 class="services-image"
-                [style.backgroundImage]="card.background"
+                [style.backgroundImage]="
+                  '
+                  url(../../../../assets/' +
+                  card.background +
+                  ')'
+                "
               ></div>
               <div class="services-info">
                 <div>
@@ -27,7 +32,7 @@
                   <img src="../../../../assets/wallet.svg" alt="price" />
                   <span>Цена: {{ card.price }}лв.</span>
                 </div>
-                <button routerLink="{{ card.id }}">Виж повече</button>
+                <button routerLink="service/{{ card.id }}">Виж повече</button>
               </div>
             </div>
           </div>
