@@ -28,7 +28,12 @@ import { ModalComponent } from './body/modal/modal.component';
     HomePageComponent,
     ModalComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -4,19 +4,13 @@ import { ScrollOnClickService } from './scroll-on-click.service';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+  styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit {
+  constructor(private scrollOnClick: ScrollOnClickService) {}
+  ngOnInit(): void {}
 
-  constructor(private scrollOnClick:ScrollOnClickService){}
-  ngOnInit(): void {
-  }
-
-  scrollToAbout(): void {
-    document.querySelector("#about-wrapper")?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  scrollToContacts(): void {
-    document.querySelector("#contact-us")?.scrollIntoView({ behavior: 'smooth' });
+  scrollTo(element: string): void {
+    this.scrollOnClick.scrollTo(element);
   }
 }

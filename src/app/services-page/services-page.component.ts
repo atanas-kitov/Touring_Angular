@@ -1,7 +1,9 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IServices } from '../app.interfaces';
 import { FetchServicesService } from '../fetch-services.service';
+import { ScrollOnClickService } from '../header/navigation/scroll-on-click.service';
+import { NavigateService } from '../navigate.service';
 
 @Component({
   selector: 'app-services-page',
@@ -15,7 +17,9 @@ export class ServicesPageComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private fetchServices: FetchServicesService
+    private fetchServices: FetchServicesService,
+    private navigate: NavigateService,
+    private scrollOnClick: ScrollOnClickService
   ) {
     this.activatedRoute.paramMap.subscribe((params) => {
       this.pageId = params.get('serviceId');
@@ -27,5 +31,9 @@ export class ServicesPageComponent implements OnInit {
     console.log(this.services);
     console.log(this.pageId);
     console.log(this.service);
+  }
+
+  nav(route: string): void {
+    this.navigate.navigateTo(route);
   }
 }

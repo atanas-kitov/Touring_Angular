@@ -32,7 +32,7 @@
                   <img src="../../../../assets/wallet.svg" alt="price" />
                   <span>Цена: {{ card.price }}лв.</span>
                 </div>
-                <button routerLink="service/{{ card.id }}">Виж повече</button>
+                <button (click)="nav('service/' + card.id)">Виж повече</button>
               </div>
             </div>
           </div>

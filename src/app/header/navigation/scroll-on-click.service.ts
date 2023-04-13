@@ -1,22 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ScrollOnClickService {
-  
-  constructor() {
-  }
+  constructor() {}
 
-  scrollToAbout(): void {
-    document.querySelector("#about-wrapper")?.scrollIntoView({ behavior: 'smooth' });
+  scrollTo(element: string): void {
+    document.querySelector(element)?.scrollIntoView({ behavior: 'smooth' });
   }
-
-  scrollToContacts(): void {
-    document.querySelector("#contact-us")?.scrollIntoView({ behavior: 'smooth' });
-  }
-  
 }
-
-
-
