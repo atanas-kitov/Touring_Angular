@@ -13,7 +13,8 @@ import { ServiceComponent } from './body/service/service.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ModalComponent } from './body/modal/modal.component';
+import { ModalComponent } from './body/service/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,13 @@ import { ModalComponent } from './body/modal/modal.component';
     HomePageComponent,
     ModalComponent,
   ],
+  entryComponents: [ModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

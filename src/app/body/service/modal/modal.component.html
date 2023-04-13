@@ -1,0 +1,31 @@
+<!-- <div class="modal-wrapper" > -->
+<div class="modall" *ngIf="card">
+  <div class="modal-title">
+    <h3 class="activity">{{ card.activity }}</h3>
+    <h3 class="location">{{ card.location }}</h3>
+    <div
+      class="modal-background"
+      [style.backgroundImage]="
+        '
+    url(../../../../assets/' +
+        card.background +
+        ')'
+      "
+    ></div>
+  </div>
+  <div class="modal-description">
+    <button class="close" (click)="onClose()"></button>
+    <p>{{ card.description }}</p>
+    <div class="modal-info">
+      <div>
+        <img src="../../../../assets/time.svg" alt="time" />
+        <span>Времетраене: {{ card.time }}ч.</span>
+      </div>
+      <div>
+        <img src="../../../../assets/wallet.svg" alt="price" />
+        <span>Цена: {{ card.price }}лв.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
